@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Store Planning | Promart</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════ NAVBAR ═══════════════════════════════ -->
+<nav class="navbar">
+  <div class="logo">PROMART <span>STORE PLANNING</span></div>
+  <div class="menu">
+    <a href="#fichas">01. Fichas</a>
+    <a href="#bim">02. BIM</a>
+    <a href="#acuerdos">03. Acuerdos</a>
+    <a href="#analisis">04. Análisis</a>
+    <a href="#solicitudes">05. Solicitudes</a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ════════════════════════════════ -->
+<header>
+  <div class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-wedge"></div>
+    <div class="hero-wedge-inner"></div>
+    <svg class="hero-fp" viewBox="0 0 300 240" fill="none" aria-hidden="true">
+      <rect x="10" y="10" width="280" height="220" stroke="white" stroke-width="2"/>
+      <rect x="10" y="10" width="118" height="108" stroke="white" stroke-width="1.5"/>
+      <rect x="128" y="10" width="90" height="108" stroke="white" stroke-width="1.5"/>
+      <rect x="10" y="118" width="172" height="112" stroke="white" stroke-width="1.5"/>
+      <line x1="82" y1="118" x2="82" y2="230" stroke="white" stroke-width="1"/>
+      <line x1="218" y1="10" x2="218" y2="142" stroke="white" stroke-width="1"/>
+      <line x1="10" y1="178" x2="182" y2="178" stroke="white" stroke-width="1"/>
+    </svg>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        PORTAL DEL ÁREA · PROMART HOMECENTER
+      </div>
+      <h1>STORE<em>PLANNING</em></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-sub">Bienvenido a los activos digitales del área.<br>Planificación · Diseño · Desarrollo de tiendas.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     01. FICHAS DE TIENDA IDEAL
+════════════════════════════════════════════════════════ -->
+<section id="fichas" class="section">
+  <div class="sec-header">
+    <div class="sec-num">01 — REPOSITORIO</div>
+    <h2 class="sec-title">FICHAS DE <em>TIENDA IDEAL</em></h2>
+    <div class="sec-rule"></div>
+    <p class="sec-desc">
+      Repositorio centralizado de fichas técnicas por formato de tienda. Cada ficha documenta los estándares de diseño, equipamiento metálico, picadas de rack y especificaciones del proveedor homologado. Diferencia entre tienda alta (Picada 5.00 / HMY) y tienda baja (Picada 7.50 / JRM) para una planificación precisa de espacios comerciales Promart.
+    </p>
+  </div>
+
+  <div class="fichas-grid">
+
+    <!-- TIENDA ALTA -->
+    <a class="fcard"
+       href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgBULCSkslTSTKHMPCexOGKjAcAd1zdtJVh6ZFur-mHmhSA?e=s2JYpG"
+       target="_blank" rel="noopener">
+      <div class="fcard-preview">
+        <span class="fcard-badge">TIENDA ALTA</span>
+        <!-- SVG: tall rack elevation (4.88 m, 7 shelves) -->
+        <svg width="200" height="124" viewBox="0 0 200 124" fill="none" aria-hidden="true">
+          <line x1="8" y1="118" x2="192" y2="118" stroke="#F15A22" stroke-width="2.5"/>
+          <!-- uprights -->
+          <rect x="26" y="4"  width="5" height="114" fill="#555"/>
+          <rect x="85" y="4"  width="5" height="114" fill="#555"/>
+          <rect x="144" y="4" width="5" height="114" fill="#555"/>
+          <!-- 7 shelves bay 1 -->
+          <rect x="26" y="4"   width="64" height="4" fill="#F15A22" rx="1"/>
+          <rect x="26" y="20"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="36"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="52"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="68"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="84"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="100" width="64" height="4" fill="#888" rx="1"/>
+          <!-- 7 shelves bay 2 -->
+          <rect x="85" y="4"   width="64" height="4" fill="#F15A22" rx="1"/>
+          <rect x="85" y="20"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="36"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="52"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="68"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="84"  width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="100" width="64" height="4" fill="#888" rx="1"/>
+          <!-- dimension -->
+          <line x1="16" y1="4"   x2="16" y2="118" stroke="rgba(255,255,255,.4)" stroke-width="1" stroke-dasharray="3,2"/>
+          <line x1="12" y1="4"   x2="20" y2="4"   stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <line x1="12" y1="118" x2="20" y2="118" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <rect x="152" y="48" width="42" height="20" rx="3" fill="rgba(241,90,34,.25)"/>
+          <text x="157" y="62" fill="#F15A22" font-size="11" font-family="monospace" font-weight="bold">4.88 m</text>
+        </svg>
+      </div>
+      <div class="fcard-body">
+        <div class="fcard-type">Picada 5.00 · Proveedor HMY</div>
+        <div class="fcard-name">TIENDA ALTA</div>
+        <div class="fcard-meta">
+          <i class="fa-solid fa-ruler-vertical" aria-hidden="true"></i> Picada 5.00
+          &nbsp;·&nbsp;
+          <i class="fa-solid fa-building" aria-hidden="true"></i> HMY
+          &nbsp;·&nbsp;
+          <i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i> Altura 4.88 m
+        </div>
+        <div class="fcard-cta">
+          Abrir repositorio
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </a>
+
+    <!-- TIENDA BAJA -->
+    <a class="fcard"
+       href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgATBf2HAFQqTL9MArGzLinBAZXgsNfljYjwxcgqyO6PKyA?e=hCOrcI"
+       target="_blank" rel="noopener">
+      <div class="fcard-preview">
+        <span class="fcard-badge">TIENDA BAJA</span>
+        <!-- SVG: shorter rack (3.65 m, 5 shelves) -->
+        <svg width="200" height="124" viewBox="0 0 200 124" fill="none" aria-hidden="true">
+          <line x1="8" y1="118" x2="192" y2="118" stroke="#F15A22" stroke-width="2.5"/>
+          <!-- uprights (shorter, start y=32) -->
+          <rect x="26" y="32"  width="5" height="86" fill="#555"/>
+          <rect x="85" y="32"  width="5" height="86" fill="#555"/>
+          <rect x="144" y="32" width="5" height="86" fill="#555"/>
+          <!-- 5 shelves bay 1 -->
+          <rect x="26" y="32" width="64" height="4" fill="#F15A22" rx="1"/>
+          <rect x="26" y="50" width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="68" width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="86" width="64" height="4" fill="#888" rx="1"/>
+          <rect x="26" y="104" width="64" height="4" fill="#888" rx="1"/>
+          <!-- 5 shelves bay 2 -->
+          <rect x="85" y="32" width="64" height="4" fill="#F15A22" rx="1"/>
+          <rect x="85" y="50" width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="68" width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="86" width="64" height="4" fill="#888" rx="1"/>
+          <rect x="85" y="104" width="64" height="4" fill="#888" rx="1"/>
+          <!-- dimension -->
+          <line x1="16" y1="32"  x2="16" y2="118" stroke="rgba(255,255,255,.4)" stroke-width="1" stroke-dasharray="3,2"/>
+          <line x1="12" y1="32"  x2="20" y2="32"  stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <line x1="12" y1="118" x2="20" y2="118" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+          <rect x="152" y="64" width="42" height="20" rx="3" fill="rgba(241,90,34,.25)"/>
+          <text x="157" y="78" fill="#F15A22" font-size="11" font-family="monospace" font-weight="bold">3.65 m</text>
+        </svg>
+      </div>
+      <div class="fcard-body">
+        <div class="fcard-type">Picada 7.50 · Proveedor JRM</div>
+        <div class="fcard-name">TIENDA BAJA</div>
+        <div class="fcard-meta">
+          <i class="fa-solid fa-ruler-vertical" aria-hidden="true"></i> Picada 7.50
+          &nbsp;·&nbsp;
+          <i class="fa-solid fa-building" aria-hidden="true"></i> JRM
+          &nbsp;·&nbsp;
+          <i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i> Altura 3.65 m
+        </div>
+        <div class="fcard-cta">
+          Abrir repositorio
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     02. REPOSITORIO BIM
+════════════════════════════════════════════════════════ -->
+<section id="bim" class="section s-gray">
+  <div class="sec-header">
+    <div class="sec-num">02 — FAMILIAS REVIT</div>
+    <h2 class="sec-title">REPOSITORIO <em>BIM</em></h2>
+    <div class="sec-rule"></div>
+    <p class="sec-desc">
+      Biblioteca completa de familias BIM paramétricas para Revit, organizadas por tipología y proveedor homologado Promart. Incluye la plantilla base de proyecto, racks metálicos HMY y JRM, góndolas de exhibición, carpintería e instalaciones eléctricas — todas listas para integrar directamente en tus modelos.
+    </p>
+  </div>
+
+  <div class="bim-grid">
+
+    <!-- A. PLANTILLA BASE -->
+    <a href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgDJP-W8IH-ITaFZKG6C5bmWAY1PXhZ1T7iaxUZuIzt8qFw?e=KAAkFn"
+       class="bim-btn" target="_blank" rel="noopener">
+      <div class="bim-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="7" y="3" width="19" height="26" rx="2.5" stroke="white" stroke-width="1.7" fill="none"/>
+          <line x1="12" y1="11" x2="22" y2="11" stroke="#F15A22" stroke-width="1.7"/>
+          <line x1="12" y1="16" x2="20" y2="16" stroke="rgba(255,255,255,.4)" stroke-width="1.2"/>
+          <line x1="12" y1="21" x2="18" y2="21" stroke="rgba(255,255,255,.4)" stroke-width="1.2"/>
+          <circle cx="27" cy="27" r="7" fill="#F15A22"/>
+          <line x1="27" y1="23.5" x2="27" y2="30.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="23.5" y1="27" x2="30.5" y2="27" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="bim-text">
+        <div class="bim-lbl">A · Template Revit</div>
+        <div class="bim-name">Plantilla Base</div>
+      </div>
+      <div class="bim-arr"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
+    </a>
+
+    <!-- B. RACKS HMY -->
+    <a href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgDnH4BEPuc_SJSiSXKjJ28lAVe3vmrEBfG0sAL0YEsKP9U?e=2Ku1Cy"
+       class="bim-btn" target="_blank" rel="noopener">
+      <div class="bim-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="4"  y="3" width="4" height="30" fill="#666"/>
+          <rect x="28" y="3" width="4" height="30" fill="#666"/>
+          <rect x="4"  y="4"  width="28" height="4" fill="#F15A22" rx="1"/>
+          <rect x="4"  y="14" width="28" height="4" fill="#888" rx="1"/>
+          <rect x="4"  y="24" width="28" height="4" fill="#888" rx="1"/>
+          <text x="10" y="12" fill="white" font-size="4.5" font-family="monospace" font-weight="bold">HMY</text>
+        </svg>
+      </div>
+      <div class="bim-text">
+        <div class="bim-lbl">B · Proveedor HMY</div>
+        <div class="bim-name">Racks Metálicos HMY</div>
+      </div>
+      <div class="bim-arr"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
+    </a>
+
+    <!-- C. RACKS JRM -->
+    <a href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgD8Zhyo_jmyRLrCKFbq2EWfAePWhwbYzqlpqCxTuPCcc7Y?e=X4bMBg"
+       class="bim-btn" target="_blank" rel="noopener">
+      <div class="bim-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="4"  y="3" width="4" height="30" fill="#666"/>
+          <rect x="28" y="3" width="4" height="30" fill="#666"/>
+          <rect x="4"  y="4"  width="28" height="4" fill="#F15A22" rx="1"/>
+          <rect x="4"  y="14" width="28" height="4" fill="#888" rx="1"/>
+          <rect x="4"  y="24" width="28" height="4" fill="#888" rx="1"/>
+          <text x="10" y="12" fill="white" font-size="4.5" font-family="monospace" font-weight="bold">JRM</text>
+        </svg>
+      </div>
+      <div class="bim-text">
+        <div class="bim-lbl">C · Proveedor JRM</div>
+        <div class="bim-name">Racks Metálicos JRM</div>
+      </div>
+      <div class="bim-arr"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
+    </a>
+
+    <!-- D. GÓNDOLAS -->
+    <a href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgAvloaoFRM6S6pmq2n2QWS-AXjbHLKLFP-SY2T54zuR_Tw?e=KlpFRw"
+       class="bim-btn" target="_blank" rel="noopener">
+      <div class="bim-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="2"  y="11" width="13" height="18" rx="1.5" fill="#3A3A3A"/>
+          <rect x="21" y="11" width="13" height="18" rx="1.5" fill="#3A3A3A"/>
+          <rect x="2"  y="12" width="13" height="3" fill="#F15A22" rx="1"/>
+          <rect x="2"  y="18" width="13" height="3" fill="#777" rx="1"/>
+          <rect x="2"  y="24" width="13" height="3" fill="#777" rx="1"/>
+          <rect x="21" y="12" width="13" height="3" fill="#F15A22" rx="1"/>
+          <rect x="21" y="18" width="13" height="3" fill="#777" rx="1"/>
+          <rect x="21" y="24" width="13" height="3" fill="#777" rx="1"/>
+          <rect x="1"  y="9"  width="14" height="3" rx="1" fill="#555"/>
+          <rect x="21" y="9"  width="14" height="3" rx="1" fill="#555"/>
+          <line x1="1" y1="29" x2="35" y2="29" stroke="#F15A22" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="bim-text">
+        <div class="bim-lbl">D · Exhibición</div>
+        <div class="bim-name">Familias Góndolas</div>
+      </div>
+      <div class="bim-arr"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
+    </a>
+
+    <!-- E. CARPINTERÍA -->
+    <a href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgBrFv3kEm0MT7d_1W4j_6nFAZlCghAdXCGRkMjlP4_ThLk?e=PNmYUB"
+       class="bim-btn" target="_blank" rel="noopener">
+      <div class="bim-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="5" y="7" width="26" height="22" rx="2.5" stroke="white" stroke-width="1.7" fill="#2A2A2A"/>
+          <line x1="18" y1="7" x2="18" y2="29" stroke="#555" stroke-width="1"/>
+          <line x1="5" y1="18" x2="31" y2="18" stroke="#555" stroke-width="1"/>
+          <rect x="13" y="22" width="4" height="2" rx="1" fill="#F15A22"/>
+          <rect x="19" y="22" width="4" height="2" rx="1" fill="#F15A22"/>
+          <rect x="13" y="11" width="4" height="2" rx="1" fill="#F15A22"/>
+          <rect x="19" y="11" width="4" height="2" rx="1" fill="#F15A22"/>
+          <line x1="8"  y1="9"  x2="8"  y2="17" stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+          <line x1="11" y1="9"  x2="11" y2="17" stroke="rgba(255,255,255,.1)" stroke-width=".8"/>
+        </svg>
+      </div>
+      <div class="bim-text">
+        <div class="bim-lbl">E · Mobiliario</div>
+        <div class="bim-name">Familias Carpintería</div>
+      </div>
+      <div class="bim-arr"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
+    </a>
+
+    <!-- F. INSTALACIONES ELÉCTRICAS -->
+    <a href="https://intercorpretail.sharepoint.com/:f:/s/DISEO20/IgA_ov30gaf8SZWOiwQq4gUKAb0J0P9fAwMLc4H96U8iNNg?e=oQoHud"
+       class="bim-btn" target="_blank" rel="noopener">
+      <div class="bim-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <ellipse cx="18" cy="10" rx="8" ry="4" fill="#F15A22" opacity=".75"/>
+          <ellipse cx="18" cy="10" rx="5" ry="2.5" fill="#F15A22"/>
+          <line x1="18" y1="1"  x2="18" y2="5"  stroke="#F15A22" stroke-width="1.5" opacity=".7"/>
+          <line x1="27" y1="3"  x2="25" y2="6"  stroke="#F15A22" stroke-width="1.5" opacity=".6"/>
+          <line x1="9"  y1="3"  x2="11" y2="6"  stroke="#F15A22" stroke-width="1.5" opacity=".6"/>
+          <line x1="31" y1="10" x2="27" y2="10" stroke="#F15A22" stroke-width="1.5" opacity=".5"/>
+          <line x1="5"  y1="10" x2="9"  y2="10" stroke="#F15A22" stroke-width="1.5" opacity=".5"/>
+          <line x1="18" y1="14" x2="18" y2="26" stroke="white" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <rect x="13" y="26" width="10" height="8" rx="1.5" fill="#444" stroke="#666" stroke-width="1"/>
+          <circle cx="15.5" cy="30" r="1.2" fill="white"/>
+          <circle cx="20.5" cy="30" r="1.2" fill="white"/>
+        </svg>
+      </div>
+      <div class="bim-text">
+        <div class="bim-lbl">F · MEP Eléctrico</div>
+        <div class="bim-name">Instalaciones Eléctricas</div>
+      </div>
+      <div class="bim-arr"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     03. ACUERDOS DEL ÁREA
+════════════════════════════════════════════════════════ -->
+<section id="acuerdos" class="section">
+  <div class="sec-header">
+    <div class="sec-num">03 — GESTIÓN DEL ÁREA</div>
+    <h2 class="sec-title">ACUERDOS <em>DEL ÁREA</em></h2>
+    <div class="sec-rule"></div>
+    <p class="sec-desc">
+      Registro oficial de actas, lineamientos y compromisos estratégicos establecidos por el equipo de Store Planning. Centraliza las coordinaciones internas, criterios de trabajo, responsabilidades y seguimiento de actividades para garantizar una gestión organizada y alineada con los objetivos del proyecto Promart 2026.
+    </p>
+  </div>
+
+  <div class="acuerdo-card">
+    <div class="acuerdo-ic" aria-hidden="true">
+      <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+        <rect x="8" y="4" width="24" height="32" rx="3" stroke="white" stroke-width="2" fill="none"/>
+        <line x1="14" y1="13" x2="26" y2="13" stroke="#F15A22" stroke-width="2"/>
+        <line x1="14" y1="19" x2="26" y2="19" stroke="rgba(255,255,255,.45)" stroke-width="1.3"/>
+        <line x1="14" y1="25" x2="21" y2="25" stroke="rgba(255,255,255,.45)" stroke-width="1.3"/>
+        <circle cx="31" cy="31" r="8" fill="#F15A22"/>
+        <polyline points="27,31 30,34 35,27" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="acuerdo-info">
+      <h3>Actas de Acuerdos de Gestión 2026</h3>
+      <p>Accede al repositorio oficial con todas las actas, compromisos y resoluciones del equipo de Store Planning. Documentos vigentes y en seguimiento para el año 2026.</p>
+    </div>
+    <a href="LINK_9" target="_blank" rel="noopener" class="cta cta-dark">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="13" height="14" rx="2" stroke="white" stroke-width="1.5" fill="none"/>
+        <line x1="5" y1="6"  x2="12" y2="6"  stroke="#F15A22" stroke-width="1.3"/>
+        <line x1="5" y1="9"  x2="12" y2="9"  stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+        <line x1="5" y1="12" x2="8"  y2="12" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+      </svg>
+      Ver Actas de Acuerdos
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     04. ANÁLISIS DE TIENDA
+════════════════════════════════════════════════════════ -->
+<section id="analisis" class="section s-dark">
+  <div class="sec-header">
+    <div class="sec-num lt">04 — COMPARATIVO</div>
+    <h2 class="sec-title lt">ANÁLISIS DE <em>TIENDA</em></h2>
+    <div class="sec-rule"></div>
+    <p class="sec-desc lt">
+      Carga un archivo Excel con datos por tienda y área comercial. Filtra por país, selecciona las tiendas, elige el área y la métrica (M², M³ o N° de Racks) para visualizar el gráfico comparativo con leyenda de colores por tienda.
+    </p>
+  </div>
+
+  <div class="dash-grid">
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="dsidebar">
+
+      <div class="fgrp">
+        <div class="flbl"><i class="fa-solid fa-file-excel" aria-hidden="true"></i> Cargar Excel</div>
+        <div class="upzone" id="upzone" onclick="document.getElementById('excelInput').click()" role="button" tabindex="0">
+          <div class="upzone-ico" aria-hidden="true">📂</div>
+          <p>Arrastra o <b>haz clic</b> para cargar</p>
+          <p style="font-size:11px;color:rgba(255,255,255,.3)">.xlsx · .xls · .csv</p>
+        </div>
+        <input type="file" id="excelInput" accept=".xlsx,.xls,.csv" aria-label="Seleccionar archivo Excel">
+        <button class="tmpl-btn" onclick="downloadTemplate()">
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Descargar plantilla de ejemplo
+        </button>
+      </div>
+
+      <div id="dyn-ctrl" style="display:none;">
+
+        <div class="fgrp">
+          <div class="flbl"><i class="fa-solid fa-globe" aria-hidden="true"></i> País</div>
+          <select id="paisFilter" class="dsel" onchange="updateStores()" aria-label="Seleccionar país"></select>
+        </div>
+
+        <div class="fgrp">
+          <div class="flbl"><i class="fa-solid fa-list-check" aria-hidden="true"></i> Tiendas</div>
+          <div class="sel-row">
+            <button class="sel-btn" onclick="selectAll(true)">Todas</button>
+            <button class="sel-btn" onclick="selectAll(false)">Ninguna</button>
+          </div>
+          <div class="clbox" id="tiendaChecklist" role="group" aria-label="Seleccionar tiendas"></div>
+        </div>
+
+        <div class="fgrp">
+          <div class="flbl"><i class="fa-solid fa-store" aria-hidden="true"></i> Área comercial</div>
+          <select id="areaFilter" class="dsel" onchange="renderChart()" aria-label="Filtrar por área"></select>
+        </div>
+
+        <div class="fgrp">
+          <div class="flbl"><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i> Métrica</div>
+          <select id="metricaFilter" class="dsel" onchange="renderChart()" aria-label="Seleccionar métrica">
+            <option value="m2">Metros Cuadrados (m²)</option>
+            <option value="m3">Metros Cúbicos (m³)</option>
+            <option value="N_RACKS">Número de Racks</option>
+          </select>
+        </div>
+
+        <div class="fgrp">
+          <div class="flbl"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Tipo de gráfico</div>
+          <select id="chartTypeFilter" class="dsel" onchange="renderChart()" aria-label="Tipo de gráfico">
+            <option value="line">Líneas</option>
+            <option value="bar">Barras</option>
+          </select>
+        </div>
+
+        <button class="cta cta-or" style="width:100%;justify-content:center;font-size:14px;padding:10px 16px;margin-top:4px;" onclick="clearData()">
+          <i class="fa-solid fa-trash-can" aria-hidden="true"></i> Limpiar datos
+        </button>
+
+      </div>
+    </aside>
+
+    <!-- ── CHART PANEL ── -->
+    <main class="dpanel">
+      <div class="dtopbar">
+        <div>
+          <div class="dchart-title" id="ctitle">Comparativo por área comercial</div>
+          <div class="dchart-sub"  id="csub">Carga un Excel para comenzar</div>
+        </div>
+      </div>
+
+      <div class="legend" id="legend" role="list" aria-label="Leyenda de tiendas">
+        <span class="legend-hint">La leyenda aparecerá aquí con el color de cada tienda</span>
+      </div>
+
+      <div class="canvas-wrap">
+        <div class="empty-msg" id="emptyMsg">
+          <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+          <div>Carga un archivo Excel para<br>visualizar el comparativo entre tiendas</div>
+        </div>
+        <canvas id="mainChart" style="display:none;" role="img" aria-label="Gráfico comparativo de tiendas"></canvas>
+      </div>
+    </main>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     05. SOLICITUDES DE CAMBIOS
+════════════════════════════════════════════════════════ -->
+<section id="solicitudes" class="section s-gray">
+  <div class="sec-header">
+    <div class="sec-num">05 — PROCESO OFICIAL</div>
+    <h2 class="sec-title">SOLICITUDES DE <em>CAMBIOS</em></h2>
+    <div class="sec-rule"></div>
+    <p class="sec-desc">
+      Canal oficial para enviar requerimientos de modificación técnica de fichas de tienda. Completa el formulario con el sustento técnico, económico y operativo para que el equipo de Store Planning evalúe la factibilidad del cambio propuesto.
+    </p>
+  </div>
+
+  <div class="sol-card">
+    <div class="sol-left">
+      <div class="sol-badge">
+        <i class="fa-solid fa-circle-dot" style="font-size:9px;" aria-hidden="true"></i>
+        PROCESO ACTIVO · STORE PLANNING 2026
+      </div>
+      <div class="sol-title">Formulario de<br>Solicitud de Cambio</div>
+      <p class="sol-desc">
+        Envía tu solicitud de cambio de ficha completando el formulario oficial. Describe el tipo de cambio (menor o mayor), adjunta el sustento técnico y selecciona el área involucrada para una evaluación eficiente por parte del equipo.
+      </p>
+    </div>
+    <div class="sol-right">
+      <a href="LINK_10" target="_blank" rel="noopener" class="cta cta-or" style="font-size:clamp(15px,2vw,18px);padding:clamp(13px,2vw,17px) clamp(18px,3vw,32px);">
+        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+        Ir al Formulario de Solicitudes
+      </a>
+      <span class="sol-note">Microsoft Forms · Store Planning</span>
+    </div>
+  </div>
+
+  <!-- Process steps -->
+  <div class="steps-wrap">
+    <div class="steps-title">Flujo del proceso de cambios de ficha</div>
+    <div class="steps">
+      <div class="step">
+        <div class="sdot done" aria-label="Completado"><i class="fa-solid fa-flag" style="font-size:13px;" aria-hidden="true"></i></div>
+        <div class="slbl done">Necesidad de<br>cambio de ficha</div>
+      </div>
+      <div class="step">
+        <div class="sdot done" aria-label="Completado"><i class="fa-solid fa-file-arrow-up" style="font-size:13px;" aria-hidden="true"></i></div>
+        <div class="slbl done">Envío de sustento<br>técnico / económico</div>
+      </div>
+      <div class="step">
+        <div class="sdot active" aria-label="En proceso"><i class="fa-solid fa-magnifying-glass" style="font-size:13px;" aria-hidden="true"></i></div>
+        <div class="slbl active">Store Planning<br>evalúa factibilidad</div>
+      </div>
+      <div class="step">
+        <div class="sdot" aria-label="Pendiente"><i class="fa-solid fa-people-group" style="font-size:12px;color:#696663;" aria-hidden="true"></i></div>
+        <div class="slbl">Reunión integrada<br>de diseño</div>
+      </div>
+      <div class="step">
+        <div class="sdot" aria-label="Pendiente"><i class="fa-solid fa-check" style="font-size:13px;color:#696663;" aria-hidden="true"></i></div>
+        <div class="slbl">Config. de elevaciones<br>por rack</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════ FOOTER ════════════════════════════════ -->
+<footer>
+  <div class="fbrand">PROMART HOMECENTER · STORE PLANNING</div>
+  <div class="fcopy">ACTIVOS DIGITALES · © 2026</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
